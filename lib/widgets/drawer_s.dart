@@ -1,5 +1,9 @@
 import 'package:ender_app/screens/tabs_s.dart';
 import "package:flutter/material.dart";
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri _url =
+    Uri.parse('https://enderapi-production.up.railway.app/swagger/');
 
 class Drawer_s extends StatelessWidget {
   const Drawer_s({super.key});
@@ -41,10 +45,20 @@ class Drawer_s extends StatelessWidget {
             buildItem('Characters', Icons.groups, () {
               Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: ((context) => Tabs_s(2))));
-            })
+            }),
+            ListTile(
+              title: Text('Swagger Docs'),
+              onTap: _launchUrl,
+            )
           ],
         ),
       ),
     );
+  }
+}
+
+Future<void> _launchUrl() async {
+  if (!await launchUrl(_url)) {
+    throw 'Could not launch $_url';
   }
 }

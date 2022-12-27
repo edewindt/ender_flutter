@@ -8,6 +8,7 @@ class CardItem extends StatelessWidget {
   final String bio;
   final String trvia;
   final String species;
+  final String quote;
   const CardItem(
       {required this.title,
       required this.image,
@@ -15,6 +16,7 @@ class CardItem extends StatelessWidget {
       required this.bio,
       required this.species,
       required this.trvia,
+      required this.quote,
       super.key});
 
   @override
@@ -26,7 +28,7 @@ class CardItem extends StatelessWidget {
           onTap: (() {
             Navigator.of(context).push(MaterialPageRoute(
                 builder: (context) =>
-                    Character_s(title, bio, id, image, species, trvia)));
+                    Character_s(title, bio, id, image, species, trvia, quote)));
           }),
           child: Image.network(
             image,

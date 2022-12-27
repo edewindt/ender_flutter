@@ -7,9 +7,20 @@ class Character_s extends StatelessWidget {
   final String bio;
   final String trvia;
   final String species;
-  const Character_s(
-      this.title, this.bio, this.id, this.image, this.species, this.trvia,
+  final String quote;
+  const Character_s(this.title, this.bio, this.id, this.image, this.species,
+      this.trvia, this.quote,
       {super.key});
+
+  Widget buildSectionTitle(BuildContext context, String text) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10),
+      child: Text(
+        text,
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +28,23 @@ class Character_s extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
+      body: SingleChildScrollView(
+          child: Column(
+        children: [
+          Container(
+            height: 400,
+            width: double.infinity,
+            child: Image.network(
+              image,
+              fit: BoxFit.cover,
+            ),
+          ),
+          buildSectionTitle(context, 'Quote'),
+          Container(
+            child: Text(quote),
+          )
+        ],
+      )),
     );
   }
 }

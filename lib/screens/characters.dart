@@ -49,6 +49,7 @@ class _Characters_sState extends State<Characters_s> {
               bio: i['bio'],
               species: i['species'],
               trvia: i['trivia'],
+              quote: i['quote'],
             )
         ],
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(

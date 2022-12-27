@@ -21,26 +21,29 @@ class CardItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(10),
-      child: GestureDetector(
-        onTap: (() {
-          Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) =>
-                  Character_s(title, bio, id, image, species, trvia, quote)));
-        }),
-        child: GridTile(
-          child: Image.network(
-            image,
-            fit: BoxFit.cover,
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        child: GestureDetector(
+          onTap: (() {
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) =>
+                    Character_s(title, bio, id, image, species, trvia, quote)));
+          }),
+          child: GridTile(
+            child: Image.network(
+              image,
+              fit: BoxFit.cover,
+            ),
+            footer: GridTileBar(
+                backgroundColor: Color.fromARGB(201, 0, 0, 0),
+                title: Text(
+                  '$id. $title',
+                  style: TextStyle(fontSize: 17),
+                  textAlign: TextAlign.center,
+                )),
           ),
-          footer: GridTileBar(
-              backgroundColor: Color.fromARGB(201, 0, 0, 0),
-              title: Text(
-                '$id. $title',
-                style: TextStyle(fontSize: 17),
-                textAlign: TextAlign.center,
-              )),
         ),
       ),
     );

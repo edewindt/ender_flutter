@@ -1,6 +1,3 @@
-import 'package:ender_app/screens/armies.dart';
-import 'package:ender_app/screens/characters.dart';
-import 'package:ender_app/screens/species.dart';
 import 'package:ender_app/screens/tabs_s.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';

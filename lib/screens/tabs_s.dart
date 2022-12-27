@@ -14,14 +14,13 @@ class Tabs_s extends StatefulWidget {
 
 class _Tabs_sState extends State<Tabs_s> {
   List<Map<String, Object>> pages = [
-    {'page': Armies()},
-    {'page': Species()},
-    {'page': Characters_s()}
+    {'page': Armies(), 'title': 'Armies', 'icon': Icons.colorize},
+    {'page': Species(), 'title': 'Species', 'icon': Icons.public},
+    {'page': Characters_s(), 'title': 'Characters', 'icon': Icons.groups}
   ];
-  int pagei = 0;
   void page(int ind) {
     setState(() {
-      pagei = ind;
+      widget.page = ind;
     });
   }
 
@@ -33,22 +32,21 @@ class _Tabs_sState extends State<Tabs_s> {
         child: Scaffold(
           drawer: Drawer_s(),
           appBar: AppBar(
-            title: Text('Ender API'),
+            title: Text(pages[widget.page]['title'] as String),
             centerTitle: true,
           ),
-          body: pages[pagei]['page'] as Widget,
+          body: pages[widget.page]['page'] as Widget,
           bottomNavigationBar: BottomNavigationBar(
               onTap: page,
               backgroundColor: Theme.of(context).shadowColor,
-              unselectedItemColor: Colors.white,
-              selectedItemColor: Colors.blue,
+              unselectedItemColor: Colors.grey,
+              selectedItemColor: Colors.white,
+              currentIndex: widget.page,
               items: [
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.colorize), label: 'Armies'),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.public), label: 'Species'),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.groups), label: 'Characters')
+                for (var i in pages)
+                  BottomNavigationBarItem(
+                      icon: Icon(i['icon'] as IconData),
+                      label: i['title'] as String)
               ]),
         ));
   }

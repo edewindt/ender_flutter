@@ -6,14 +6,8 @@ class Armies extends StatelessWidget {
   static const routeName = '/armies';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(title),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Text('Species'),
-      ),
+    return Center(
+      child: Text('Armies'),
     );
   }
 }

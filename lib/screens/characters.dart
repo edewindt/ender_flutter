@@ -34,30 +34,24 @@ class _Characters_sState extends State<Characters_s> {
   }
 
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(Characters_s.title),
-        centerTitle: true,
-      ),
-      body: GridView(
-        children: [
-          for (var i in items)
-            CardItem(
-              id: i['id'],
-              title: i['name'],
-              image: i['media'],
-              bio: i['bio'],
-              species: i['species'],
-              trvia: i['trivia'],
-              quote: i['quote'],
-            )
-        ],
-        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 300,
-          childAspectRatio: 3 / 2,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
-        ),
+    return GridView(
+      children: [
+        for (var i in items)
+          CardItem(
+            id: i['id'],
+            title: i['name'],
+            image: i['media'],
+            bio: i['bio'],
+            species: i['species'],
+            trvia: i['trivia'],
+            quote: i['quote'],
+          )
+      ],
+      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+        maxCrossAxisExtent: 300,
+        childAspectRatio: 3 / 2,
+        crossAxisSpacing: 20,
+        mainAxisSpacing: 20,
       ),
     );
   }

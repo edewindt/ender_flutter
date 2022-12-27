@@ -23,7 +23,7 @@ class EnderApp extends StatelessWidget {
          ThemeMode.dark for dark theme
       */
       debugShowCheckedModeBanner: false,
-      home: Tabs_s(),
+      home: Tabs_s(1),
     );
   }
 }

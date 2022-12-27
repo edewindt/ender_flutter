@@ -5,7 +5,8 @@ import 'package:ender_app/widgets/drawer_s.dart';
 import 'package:flutter/material.dart';
 
 class Tabs_s extends StatefulWidget {
-  const Tabs_s({super.key});
+  int page = 1;
+  Tabs_s(this.page, {super.key});
 
   @override
   State<Tabs_s> createState() => _Tabs_sState();
@@ -15,6 +16,7 @@ class _Tabs_sState extends State<Tabs_s> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
+        initialIndex: widget.page,
         length: 3,
         child: Scaffold(
           drawer: Drawer_s(),
@@ -22,16 +24,21 @@ class _Tabs_sState extends State<Tabs_s> {
             title: Text('Ender API'),
             centerTitle: true,
             bottom: TabBar(tabs: [
-              Tab(text: 'Armies'),
+              Tab(
+                text: 'Armies',
+                icon: Icon(Icons.colorize),
+              ),
               Tab(
                 text: 'Species',
+                icon: Icon(Icons.public),
               ),
               Tab(
                 text: 'Characters',
+                icon: Icon(Icons.groups),
               )
             ]),
           ),
-          body: TabBarView(children: [Armies(), Characters_s(), Species()]),
+          body: TabBarView(children: [Armies(), Species(), Characters_s()]),
         ));
   }
 }

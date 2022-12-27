@@ -1,6 +1,7 @@
 import 'package:ender_app/screens/armies.dart';
 import 'package:ender_app/screens/characters.dart';
 import 'package:ender_app/screens/species.dart';
+import 'package:ender_app/screens/tabs_s.dart';
 import 'package:flutter/material.dart';
 import './screens/home.dart';
 
@@ -12,12 +13,7 @@ class EnderApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
-      routes: {
-        Armies.routeName: (context) => Armies(),
-        Species.routeName: (context) => Species(),
-        Characters_s.routeName: (context) => Characters_s()
-      },
+      home: Tabs_s(),
     );
   }
 }

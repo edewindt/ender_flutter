@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Characters extends StatelessWidget {
-  const Characters({super.key});
+class Characters_s extends StatelessWidget {
+  const Characters_s({super.key});
   static const title = 'Characters';
   static const routeName = '/characters';
   @override

@@ -21,7 +21,7 @@ class CardItem extends StatelessWidget {
           ),
         ),
         footer: GridTileBar(
-            backgroundColor: Colors.black54,
+            backgroundColor: Color.fromARGB(201, 0, 0, 0),
             title: Text(
               title,
               textAlign: TextAlign.center,

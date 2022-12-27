@@ -41,10 +41,18 @@ class _Characters_sState extends State<Characters_s> {
       ),
       body: GridView(
         children: [
-          for (var i in items) CardItem(i['name'], i['media'], i['id'])
+          for (var i in items)
+            CardItem(
+              id: i['id'],
+              title: i['name'],
+              image: i['media'],
+              bio: i['bio'],
+              species: i['species'],
+              trvia: i['trivia'],
+            )
         ],
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 200,
+          maxCrossAxisExtent: 300,
           childAspectRatio: 3 / 2,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,

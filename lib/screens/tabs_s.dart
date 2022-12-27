@@ -11,7 +11,7 @@ final Uri _url =
 enum Options { Contact, About, Swagger }
 
 class Tabs_s extends StatefulWidget {
-  int page = 1;
+  int page = 0;
   Tabs_s(this.page, {super.key});
 
   @override
@@ -36,19 +36,22 @@ class _Tabs_sState extends State<Tabs_s> {
 
   @override
   Widget build(BuildContext context) {
+    bool size = MediaQuery.of(context).orientation == Orientation.landscape;
     return DefaultTabController(
       initialIndex: widget.page,
       length: 3,
       child: Scaffold(
-          // drawer: Drawer_s(),
+          drawer: !size ? Drawer_s() : null,
           appBar: AppBar(
-            leading: InkWell(
-              child: Container(
-                  width: 30,
-                  padding: EdgeInsets.symmetric(horizontal: 23),
-                  child: Icon(Icons.menu)),
-              onTap: () => setState(() => isExtended = !isExtended),
-            ),
+            leading: size
+                ? InkWell(
+                    child: Container(
+                        width: 30,
+                        padding: EdgeInsets.symmetric(horizontal: 23),
+                        child: Icon(Icons.menu)),
+                    onTap: () => setState(() => isExtended = !isExtended),
+                  )
+                : null,
             title: Text(pages[widget.page]['title'] as String),
             actions: [
               PopupMenuButton(
@@ -77,40 +80,42 @@ class _Tabs_sState extends State<Tabs_s> {
               )
             ],
           ),
-          body: Row(
-            children: [
-              NavigationRail(
-                // labelType: NavigationRailLabelType.selected,
-                selectedLabelTextStyle: TextStyle(color: selectedColor),
-                selectedIndex: widget.page,
-                extended: isExtended,
-                onDestinationSelected: page,
-                selectedIconTheme:
-                    IconThemeData(color: selectedColor, size: 35),
-                destinations: [
-                  for (var i in pages)
-                    NavigationRailDestination(
-                        icon: Icon(i['icon'] as IconData),
-                        label: Text(i['title'] as String))
-                ],
-              ),
-              Expanded(child: pages[widget.page]['page'] as Widget)
-            ],
-          )
-          // bottomNavigationBar: BottomNavigationBar(
-          //     onTap: page,
-          //     backgroundColor: Theme.of(context).shadowColor,
-          //     unselectedItemColor: Colors.grey,
-          //     selectedItemColor: Colors.white,
-          //     currentIndex: widget.page,
-          //     items: [
-          //       for (var i in pages)
-          //         BottomNavigationBarItem(
-          //             icon: Icon(i['icon'] as IconData),
-          //             label: i['title'] as String)
-          //     ]),
-
-          ),
+          body: size
+              ? Row(
+                  children: [
+                    NavigationRail(
+                      // labelType: NavigationRailLabelType.selected,
+                      selectedLabelTextStyle: TextStyle(color: selectedColor),
+                      selectedIndex: widget.page,
+                      extended: isExtended,
+                      onDestinationSelected: page,
+                      selectedIconTheme:
+                          IconThemeData(color: selectedColor, size: 35),
+                      destinations: [
+                        for (var i in pages)
+                          NavigationRailDestination(
+                              icon: Icon(i['icon'] as IconData),
+                              label: Text(i['title'] as String))
+                      ],
+                    ),
+                    Expanded(child: pages[widget.page]['page'] as Widget)
+                  ],
+                )
+              : pages[widget.page]['page'] as Widget,
+          bottomNavigationBar: !size
+              ? BottomNavigationBar(
+                  onTap: page,
+                  backgroundColor: Theme.of(context).shadowColor,
+                  unselectedItemColor: Colors.grey,
+                  selectedItemColor: Colors.white,
+                  currentIndex: widget.page,
+                  items: [
+                      for (var i in pages)
+                        BottomNavigationBarItem(
+                            icon: Icon(i['icon'] as IconData),
+                            label: i['title'] as String)
+                    ])
+              : null),
     );
   }
 }

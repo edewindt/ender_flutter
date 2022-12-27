@@ -5,7 +5,9 @@ import 'package:ender_app/screens/tabs_s.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const EnderApp());
+void main() {
+  runApp(const EnderApp());
+}
 
 class EnderApp extends StatelessWidget {
   const EnderApp({super.key});
@@ -23,7 +25,7 @@ class EnderApp extends StatelessWidget {
          ThemeMode.dark for dark theme
       */
       debugShowCheckedModeBanner: false,
-      home: Tabs_s(1),
+      home: Tabs_s(0),
     );
   }
 }

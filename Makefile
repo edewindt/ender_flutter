@@ -1,0 +1,2 @@
+bu:
+	@flutter build windows

@@ -18,6 +18,7 @@ class _Tabs_sState extends State<Tabs_s> {
         child: Scaffold(
           appBar: AppBar(
             title: Text('Ender API'),
+            centerTitle: true,
             bottom: TabBar(tabs: [
               Tab(text: 'Armies'),
               Tab(

@@ -8,7 +8,10 @@ class Species extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text(title)),
+      appBar: AppBar(
+        title: const Text(title),
+        centerTitle: true,
+      ),
     );
   }
 }

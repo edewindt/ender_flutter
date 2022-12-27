@@ -1,6 +1,7 @@
 import 'package:ender_app/screens/armies.dart';
 import 'package:ender_app/screens/characters.dart';
 import 'package:ender_app/screens/species.dart';
+import 'package:ender_app/widgets/drawer_s.dart';
 import 'package:flutter/material.dart';
 
 class Tabs_s extends StatefulWidget {
@@ -16,6 +17,7 @@ class _Tabs_sState extends State<Tabs_s> {
     return DefaultTabController(
         length: 3,
         child: Scaffold(
+          drawer: Drawer_s(),
           appBar: AppBar(
             title: Text('Ender API'),
             centerTitle: true,

@@ -11,6 +11,9 @@ class Characters_s extends StatelessWidget {
         title: const Text(title),
         centerTitle: true,
       ),
+      body: Center(
+        child: Text('Species'),
+      ),
     );
   }
 }

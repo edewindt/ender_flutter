@@ -1,0 +1,162 @@
+[
+    {
+      "id": 1,
+      "name": "Andrew (Ender) Wiggin",
+      "quote": "\"I don't care if I pass your test, I don't care if I follow your rules. If you can cheat, so can I. I won't let you beat me unfairly - I'll beat you unfairly first.\"",
+      "media": "https://enderapi-production.up.railway.app/ender-wiggin.jpeg",
+      "audio": "ender audio",
+      "bio": "Andrew Wiggin was born in 11 BX to Theresa and John Paul Wiggin. He was their third child, his older siblings being Peter and Valentine. Ender was a very humble person, despite his enormous achievements and intellect. Noble, empathetic, generous, and strong willed, he was determined to win and beat those who stood in his way.",
+      "trivia": "During his youth, Valentine gave him the nickname \"Ender\" because she could not yet pronounce \"Andrew\".",
+      "species": "Human"
+    },
+    {
+      "id": 2,
+      "name": "Petra Arkanian",
+      "quote": "“Mine mine mine. That was the curse and power of human beings—that what they saw and loved they had to have. They could share it with other people but only if they conceived of those people as being somehow their own. \"",
+      "media": "https://enderapi-production.up.railway.app/petra-arkanian.webp",
+      "audio": "petra audio",
+      "bio": "Petra was the first member of Salamander Army that Ender Wiggin met when he was moved out of his launch group and assigned there. ",
+      "trivia": "Petra's parents were never named in the books. They were always referred to as Mother and Father.",
+      "species": "Human"
+    },
+    {
+      "id": 3,
+      "name": "Julian Delphiki (Bean)",
+      "quote": "\"Remember, the enemy's gate is down.\"",
+      "media": "https://enderapi-production.up.railway.app/bean.webp",
+      "audio": "bean audio",
+      "bio": "Bean was born in Rotterdam in 6 BX as the result of an illegal experiment in genetic engineering conducted by a scientist named Volescu. Bean was incredibly brilliant, as was genetically determined by Anton’s Key. This played directly into his prowess in military strategy.",
+      "trivia": "Bean is tied with Ender in having the most books that feature him as the protagonist in the Enderverse.",
+      "species": "Human"
+    },
+    {
+      "id": 4,
+      "name": "Bonzo de Madrid",
+      "quote": "\" I won't have any soldiers in Salamander Army hanging conchudo around with Launchies. You're a soldier now.\"",
+      "media": "https://enderapi-production.up.railway.app/bonzo-madrid.webp",
+      "audio": "bonzo audio",
+      "bio": "Bonzo was born in Toledo, Spain to Amaro de Madrid and his wife. In the cathedral in Toledo, he was baptized with the name Tomas Benedito Bonito de Madrid y Valencia, Bonito meaning \"pretty boy\". Bonzo placed honor before all else, due to his father's extramarital affair during his childhood.",
+      "trivia": "When he was two years old, an International Fleet officer came to test him for Battle School, and he was given a Monitor.",
+      "species": "Human"
+    },
+    {
+      "id": 5,
+      "name": "Peter Wiggin",
+      "quote": "\"It's my duty as an American to never drink Coke or Pepsi in a country that has an indigenous soft drink. \"",
+      "media": "https://enderapi-production.up.railway.app/peter-wiggin.webp",
+      "audio": "peter audio",
+      "bio": "Born in 15 BX, Peter Wiggin was the oldest child of John Paul and Theresa Wiggin. Named for two of John Paul's brothers, Peter (Piotr) and Arkady (Arek), he was a proud and often violent child.",
+      "trivia": "Peter was elected Hegemony in his late teens.",
+      "species": "Human"
+    },
+    {
+      "id": 6,
+      "name": "Valentine Wiggin",
+      "quote": "\"All the stories are fictions. What matters is which fiction you believe.\" — Children of the Mind, Chapter 8",
+      "media": "https://enderapi-production.up.railway.app/valentine-wiggin.jpg",
+      "audio": "valentine audio",
+      "bio": "Born in 13 BX, Valentine Wiggin was the second child and only daughter of John Paul and Theresa Wiggin. Valentine was a very compassionate person, in fact too compassionate for acceptance into Battle School. She cared greatly for the people around her, including strangers. ",
+      "trivia": "Valentine had a very tender relationship with Ender and taught him arithmetic when he was three years old.",
+      "species": "Human"
+    },
+    {
+      "id": 7,
+      "name": "Dink Meeker",
+      "quote": "\"Ender could walk between my legs without touching my balls!\"",
+      "media": "https://enderapi-production.up.railway.app/dink-meeker.jpeg",
+      "audio": "dink audio",
+      "bio": "Dink was born in the Netherlands. At a young age, he was identified as prospective Battle School student and was accepted into the institution.",
+      "trivia": "He didn't believe that the Formics were real during his years in Battle School.",
+      "species": "Human"
+    },
+    {
+      "id": 8,
+      "name": "Mazer Rackham",
+      "quote": "\"Since when do you have to tell the enemy when he has won?\"",
+      "media": "https://enderapi-production.up.railway.app/mazer-rackham.jpeg",
+      "audio": "mazer audio",
+      "bio": "Mazer was born in 109 BX to a Maori mother and an English father. As a young child, Mazer grew up with his mother who taught him about Maori culture. A military man, Mazer was dutiful to his fellow soldiers and superiors, even when they abused their power. As the Formic Wars progress Mazer slowly loses more and more of his morality, however.",
+      "trivia": "As he flew through the swarms of Formic ships, he noticed that they centered around a single craft. Defying orders, he fired a missile at it, destroying it and unknowingly killing a Hive Queen. This ended the invasion with a human victory.",
+      "species": "Human"
+    },
+    {
+      "id": 9,
+      "name": "Alai",
+      "quote": "'Peace. It's what salaam means. Peace be unto you.'",
+      "media": "https://enderapi-production.up.railway.app/alai.webp",
+      "audio": "alai audio",
+      "bio": "Alai was very smart, and during their first Battle Room introduction, Ender found himself talking to Alai trying to figure out how things worked. ",
+      "trivia": "In one very personal conversation, Alai whispered one word that would help Ender through many tough spots, \"Salaam\".",
+      "species": "Human"
+    },
+    {
+      "id": 10,
+      "name": "Hyrum Graff",
+      "quote": "\"Human beings are free except when humanity needs them.\"",
+      "media": "https://enderapi-production.up.railway.app/hyrum-graff.jpg",
+      "audio": "hyrum audio",
+      "bio": "Hyrum Graff was born fourteen years after the Second Formic War. He grew up on his parent's farm in the Midwest with six siblings. Initially Graff was shown to be an uncaring man who would do anything to bring out the true potential in his students, even telling Ender the lie that he was simply playing a simulation when he was actually fighting the Third Formic War. Later in life, Graff was shown to have become a much more caring person.",
+      "trivia": "He ate when he was stressed, leading to his obesity.",
+      "species": "Human"
+    },
+    {
+      "id": 11,
+      "name": "Novinha",
+      "quote": "“He is dangerous, he is beautiful, I could drown in his understanding.” ",
+      "media": "https://enderapi-production.up.railway.app/novinha.webp",
+      "audio": "no audio",
+      "bio": "Novinha was born to Gusto and Cida von Hesse in 3111 AX on the planet Lusitania. However, during this time the effects of the Descolada soon began to kill off the human population. Gusto and Cida worked hard to develop a cure, but not before they both died to the deadly disease, leaving Novinha orphaned at age 5. Novinha was originally stated as being simultaneously stone cold and raging with internal fire, but after meeting Pipo and Libo she softened from their love.",
+      "trivia": "Novinha decided that she did not deserve to be happy, and ended up marrying Marcos Ribeira, who was usually called “Cão” - or “dog.",
+      "species": "Human"
+    },
+    {
+      "id": 12,
+      "name": "Han Qing Jao",
+      "quote": "\"My father once told me that there are no gods, only the cruel manipulations of evil people who pretended that their power was good and their exploitation was love. But if there are no gods, why are we so hungry to believe in them? Just because evil liars stand between us and the gods and block our view of them does not mean that the bright halo that surrounds each liar is not the outer edges of a god, waiting for us to find our way around the lie.\" ",
+      "media": "https://enderapi-production.up.railway.app/han-qing-jao.webp",
+      "audio": "no audio",
+      "bio": "Han Qing-jao was born into the House of Han to the godspoken Han Fei-tzu and Han Jiang-qing in 3164 AX. Han Qing-jao was completely devoted to the gods, often extensively \"cleansing\" herself by washing her hands until they bled.",
+      "trivia": "Along with Jane, Qing-jao is the only non-Ender's Game character to be depicted by a live-action actor. ",
+      "species": "Human"
+    },
+    {
+      "id": 13,
+      "name": "Jane",
+      "quote": "\"But I have eyes. And ears. I see everything in all the Hundred Worlds. I watch the sky through a thousand telescopes. I overhear a trillion conversations every day.\" She giggled a little. \"I'm the best gossip in the universe.\"\"",
+      "media": "https://enderapi-production.up.railway.app/jane.webp",
+      "audio": "no audio",
+      "bio": "Jane was an Aiúa called upon by the Formic Hive Queens to serve as a link between them and Ender Wiggin, in hopes of trying to understand his human mind. This connected the game to the Ansible network, where the Aiúa began to grow and develop into Jane.",
+      "trivia": "She was his closest friend, even closer than Valentine. She could communicate with Andrew through a microchip placed in his ear.",
+      "species": "Aiúa"
+    },
+    {
+      "id": 14,
+      "name": "Carlotta",
+      "quote": "\"It isn't lying to tell a bureaucrat whatever story it takes to get him to do his job properly.\"",
+      "media": "https://enderapi-production.up.railway.app/carlotta.webp",
+      "audio": "no audio",
+      "bio": "Sister Carlotta was born in Catalonia, Spain. She became a Catholic nun while there.",
+      "trivia": "By around 2 BX, her early successes had graduated from college.",
+      "species": "Human"
+    },
+    {
+      "id": 15,
+      "name": "Hive Queen",
+      "quote": "\"All I do is dream,\" she said. \"I dream the whole history of my people. They are my mothers, but now they are also my sisters, because I remember doing all the things they do.\"",
+      "media": "https://enderapi-production.up.railway.app/hive-queen.webp",
+      "audio": "no audio",
+      "bio": "During the Hive Queen's time as a larva, she was picked by the other Hive Queens to be the one to travel to another world in order to save the Formic species from their extinction in the impending Xenocide. The Hive Queen acted for the benefit of her species, however she changed slightly after meeting Andrew and got to know humans better.",
+      "trivia": "During the period of searching, the Hive Queen was almost a friend to Ender, though was concealed and sometimes regarded as intrusive.",
+      "species": "Formic"
+    },
+    {
+      "id": 16,
+      "name": "Dap",
+      "quote": "\"Do not speak unless spoken to!\"",
+      "media": "https://enderapi-production.up.railway.app/dap.webp",
+      "audio": "dap audio",
+      "bio": "Dap was the \"mom\" to Ender Wiggin's launch group at Battle School.",
+      "trivia": "In Ender's Game (Film), Dap's first name is said to be James.",
+      "species": "Human"
+    }
+  ]

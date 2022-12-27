@@ -33,7 +33,15 @@ class _Tabs_sState extends State<Tabs_s> {
           drawer: Drawer_s(),
           appBar: AppBar(
             title: Text(pages[widget.page]['title'] as String),
-            centerTitle: true,
+            actions: [
+              IconButton(
+                  padding: EdgeInsets.only(right: 20),
+                  onPressed: () => print('Works'),
+                  icon: Icon(
+                    Icons.settings,
+                    size: 27,
+                  ))
+            ],
           ),
           body: pages[widget.page]['page'] as Widget,
           bottomNavigationBar: BottomNavigationBar(

@@ -71,7 +71,7 @@ class Character_s extends StatelessWidget {
                     horizontal: 20,
                   ),
                   child: Text(
-                    title,
+                    '$id. $title',
                     style: TextStyle(fontSize: 26, color: Colors.white),
                     softWrap: true,
                     overflow: TextOverflow.fade,

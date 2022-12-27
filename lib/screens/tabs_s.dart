@@ -23,20 +23,23 @@ class _Tabs_sState extends State<Tabs_s> {
           appBar: AppBar(
             title: Text('Ender API'),
             centerTitle: true,
-            bottom: TabBar(tabs: [
-              Tab(
-                text: 'Armies',
-                icon: Icon(Icons.colorize),
-              ),
-              Tab(
-                text: 'Species',
-                icon: Icon(Icons.public),
-              ),
-              Tab(
-                text: 'Characters',
-                icon: Icon(Icons.groups),
-              )
-            ]),
+            bottom: TabBar(
+              tabs: [
+                Tab(
+                  text: 'Armies',
+                  icon: Icon(Icons.colorize),
+                ),
+                Tab(
+                  text: 'Species',
+                  icon: Icon(Icons.public),
+                ),
+                Tab(
+                  text: 'Characters',
+                  icon: Icon(Icons.groups),
+                )
+              ],
+              labelColor: Colors.blue,
+            ),
           ),
           body: TabBarView(children: [Armies(), Species(), Characters_s()]),
         ));

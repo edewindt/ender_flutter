@@ -13,6 +13,18 @@ class Tabs_s extends StatefulWidget {
 }
 
 class _Tabs_sState extends State<Tabs_s> {
+  List<Map<String, Object>> pages = [
+    {'page': Armies()},
+    {'page': Species()},
+    {'page': Characters_s()}
+  ];
+  int pagei = 0;
+  void page(int ind) {
+    setState(() {
+      pagei = ind;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -23,25 +35,21 @@ class _Tabs_sState extends State<Tabs_s> {
           appBar: AppBar(
             title: Text('Ender API'),
             centerTitle: true,
-            bottom: TabBar(
-              tabs: [
-                Tab(
-                  text: 'Armies',
-                  icon: Icon(Icons.colorize),
-                ),
-                Tab(
-                  text: 'Species',
-                  icon: Icon(Icons.public),
-                ),
-                Tab(
-                  text: 'Characters',
-                  icon: Icon(Icons.groups),
-                )
-              ],
-              labelColor: Colors.blue,
-            ),
           ),
-          body: TabBarView(children: [Armies(), Species(), Characters_s()]),
+          body: pages[pagei]['page'] as Widget,
+          bottomNavigationBar: BottomNavigationBar(
+              onTap: page,
+              backgroundColor: Theme.of(context).shadowColor,
+              unselectedItemColor: Colors.white,
+              selectedItemColor: Colors.blue,
+              items: [
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.colorize), label: 'Armies'),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.public), label: 'Species'),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.groups), label: 'Characters')
+              ]),
         ));
   }
 }

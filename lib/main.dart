@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/home.dart';
 
 void main() => runApp(const EnderApp());
 
@@ -7,10 +8,8 @@ class EnderApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Hello World')),
-      ),
+    return const MaterialApp(
+      home: Home(),
     );
   }
 }

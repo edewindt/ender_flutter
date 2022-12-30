@@ -28,7 +28,6 @@ class _SpeciesState extends State<Species> {
     setState(() {
       items = data;
       _isLoading = false;
-      print(data);
     });
 
 // ...

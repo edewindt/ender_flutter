@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Army extends StatelessWidget {
+class Specie extends StatelessWidget {
   final String title;
   final int id;
   final String image;
-  final List<String> notable_members;
-  const Army(
-      {required this.id,
+  final bool ramen;
+  final bool varelse;
+  final String behavior;
+
+  const Specie(
+      {required this.title,
       required this.image,
-      required this.notable_members,
-      required this.title,
+      required this.id,
+      required this.behavior,
+      required this.ramen,
+      required this.varelse,
       super.key});
 
   Widget buildSectionTitle(BuildContext context, String text) {
@@ -22,32 +27,18 @@ class Army extends StatelessWidget {
     );
   }
 
-  Widget buildContent(BuildContext context, List<String> text) {
+  Widget buildContent(BuildContext context, String text) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 5),
       padding: EdgeInsets.all(20),
       width: double.infinity,
-      height: 400,
       decoration: BoxDecoration(
           border: Border.all(color: Colors.blueGrey),
           borderRadius: BorderRadius.circular(20)),
-      child: ListView.builder(
-        itemCount: text.length,
-        itemBuilder: (context, index) => Material(
-          elevation: 4,
-          child: Container(
-            decoration:
-                BoxDecoration(border: Border.all(color: Colors.black54)),
-            padding: EdgeInsets.all(9),
-            child: ListTile(
-              leading: CircleAvatar(child: Text('${index + 1}')),
-              title: Text(
-                '${text[index]}',
-                style: TextStyle(fontSize: 18),
-              ),
-            ),
-          ),
-        ),
+      child: Text(
+        text,
+        style: TextStyle(fontSize: 20),
+        textAlign: TextAlign.center,
       ),
     );
   }
@@ -94,8 +85,25 @@ class Army extends StatelessWidget {
               )
             ],
           ),
-          buildSectionTitle(context, 'Notable Members'),
-          buildContent(context, notable_members)
+          buildSectionTitle(context, 'Behavior'),
+          buildContent(context, behavior),
+          Container(
+              margin: EdgeInsets.symmetric(horizontal: 5),
+              padding: EdgeInsets.all(20),
+              width: double.infinity,
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blueGrey),
+                  borderRadius: BorderRadius.circular(20)),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text(
+                    'Ramen: $ramen',
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  Text('Varelse: $varelse', style: TextStyle(fontSize: 20))
+                ],
+              ))
         ],
       )),
     );

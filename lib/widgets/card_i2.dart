@@ -1,6 +1,7 @@
 import 'package:ender_app/screens/character.dart';
-import 'package:ender_app/widgets/army.dart';
 import 'package:flutter/material.dart';
+
+import '../screens/army.dart';
 
 class CardItem2 extends StatelessWidget {
   final String title;
@@ -22,8 +23,13 @@ class CardItem2 extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         child: GestureDetector(
           onTap: (() {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => Army()));
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => Army(
+                      id: id,
+                      notable_members: notable_members,
+                      image: image,
+                      title: title,
+                    )));
           }),
           child: GridTile(
             child: Image.network(

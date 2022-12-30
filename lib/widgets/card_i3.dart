@@ -1,5 +1,7 @@
 import 'package:ender_app/screens/character.dart';
-import 'package:ender_app/widgets/army.dart';
+import 'package:ender_app/screens/army.dart';
+import 'package:ender_app/screens/loading.dart';
+import 'package:ender_app/widgets/specie.dart';
 import 'package:flutter/material.dart';
 
 class CardItem3 extends StatelessWidget {
@@ -26,8 +28,14 @@ class CardItem3 extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         child: GestureDetector(
           onTap: (() {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => Army()));
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => Specie(
+                    title: title,
+                    image: image,
+                    id: id,
+                    behavior: behavior,
+                    ramen: ramen,
+                    varelse: varelse)));
           }),
           child: GridTile(
             child: Image.network(

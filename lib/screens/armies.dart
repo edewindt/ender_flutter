@@ -29,7 +29,6 @@ class _ArmiesState extends State<Armies> {
     setState(() {
       items = data;
       _isLoading = false;
-      print(data);
     });
 
 // ...

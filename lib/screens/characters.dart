@@ -27,7 +27,7 @@ class _Characters_sState extends State<Characters_s> {
 
     setState(() {
       items = data;
-      // _isLoading = false;
+      _isLoading = false;
     });
 
 // ...
